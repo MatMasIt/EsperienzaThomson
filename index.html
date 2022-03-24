@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Esperienza di Thomson</title>
+    <script src="https://cdn.jsdelivr.net/npm/latex.js/dist/latex.js"></script>
+    <link rel="stylesheet" href="https://latex.now.sh/style.css">
+    <meta name="title" content="EsperienzaThomson">
+    <meta name="description"
+        content="Simulatore dell' esperienza di Thomson, per ricavare il rapporto massa-carica di un elettrone">
+    <meta name="keywords" content="thomson,cocito, mascarello,elettrone">
+    <meta name="robots" content="index, follow">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+    <meta name="author" content="Mattia Mascarello">
+    <meta property="og:title" content="EsperienzaThomson">
+    <meta property="og:site_name" content="Esperienza di Thomson, Simulatore">
+    <meta property="og:url" content="https://matmasit.github.io/EsperienzaThomson">
+    <meta property="og:description"
+        content="Simulatore dell' esperienza di Thomson, per ricavare il rapporto massa-carica di un elettrone">
+    <meta property="og:type" content="object">
+    <meta property="og:image" content="https://avatars.githubusercontent.com/u/34745996?v=4">
+
+
+</head>
+
+<body>
+    <h1>Esperienza di Thomson</h1>
+    <h2>Introduzione</h2>
+    <p>Questa esperienza utilizza un tubo di Crookes a raggi catodici per determinare il rapporto massa/carica di un
+        elettrone.</p>
+    <p>Il catodo emette un fascio di raggi catodici per effetto termoionico</p>
+    <p>L'esperimento è diviso in due fasi</p>
+    <ul>
+        <li>Due bobine di Helmholtz veogono utilizzate costituendo un solenoide per generare un campo magnetico.</li>
+        <li>Un capacitatore viene utilizzato per deviare il raggio</li>
+    </ul>
+    <div class="inputs">
+        <p>Punto $P$ appartenente alla circonferenza generata dal solenoide</p>
+        <label for="px">$P_x$</label>
+        <input type="number" id="px">
+        <label for="py">$P_y$</label>
+        <input type="number" id="py">
+        <p>Punto $P'$ appartenente alla parabola generata dal condensatore</p>
+        <label for="p2x">$P'_x$</label>
+        <input type="number" id="p2x">
+        <label for="p2y">$P'_y$</label>
+        <input type="number" id="p2y"><br />
+        <label for="I">$I$: Intensità di corrente fornita al solenoide</label>
+        <input type="number" id="I"><br />
+        <label for="V">$\Delta V$: Differenza di potenziale della corrente fornita al condensatore</label>
+        <input type="number" id="V"><br />
+        <label for="N">$N$: Numero di spire di una bobina del solenoide</label>
+        <input type="number" id="N"><br />
+        <label for="L">$L$: Lunghezza del solenoide</label>
+        <input type="number" id="L"><br />
+        <label for="d">$d$: Distanza tra i poli del condensatore</label>
+        <input type="number" id="d"><br />
+        <button type="button" id="calc">Calcola</button>
+    </div>
+
+    <div id="results"></div>
+    <footer>
+        <p>&copy; 2022, Mattia Mascarello</p>
+        <p><a href="https://github.com/MatMasIt/EsperienzaThomson">Repository</a></p>
+        <p>Concesso sotto licenza Apache 2.0</p>
+    </footer>
+    <script src="script.js"></script>
+    <script>
+        MathJax = {
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                packages: { '[+]': ['cases'] }
+            },
+            svg: {
+                fontCache: 'global'
+            }
+        };
+    </script>
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-svg.js">
+        </script>
+</body>
+
+</html>
