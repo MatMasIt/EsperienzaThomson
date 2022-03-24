@@ -168,13 +168,13 @@ class EmRapporto {
         $$
         F_{\\mathscr{L}}=e\\cdot v\\cdot b
         $$
-        <i>Forza di Lorentz</i>
+        <center><i>Forza di Lorentz</i></center>
 
         $$
         F_C=m\\frac{v^2}r
         $$
 
-        <i>Forza Centripeta</i>
+        <center><i>Forza Centripeta</i></center>
 
 
         $$
