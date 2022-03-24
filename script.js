@@ -174,7 +174,7 @@ class EmRapporto {
         F_C=m\\frac{v^2}r
         $$
 
-        <i>Forza di Lorentz</i>
+        <i>Forza Centripeta</i>
 
 
         $$
