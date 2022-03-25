@@ -212,11 +212,11 @@ class EmRapporto {
         $$
 
         $$
-        \\frac{e}m = \\frac{\\sqrt{\\frac{e}m}f}{Br}
+        \\frac{e}m = \\frac{\\sqrt{\\frac{e}m}t}{Br}
         $$
 
         $$
-        \\sqrt{\\frac{e}m}=\\frac{f}{Br}
+        \\sqrt{\\frac{e}m}=\\frac{t}{Br}
         $$
         `;
     }
